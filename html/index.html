@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Nexa helps Nigerians discover useful services, businesses, knowledge and opportunities."
+    >
+    <title>Nexa — Discover. Connect. Grow. </title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="#home" class="site-logo">
+                Nexa
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="main-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#saved" class="saved-link">Saved<span id="saved-count">0</span></a></li>
+                </ul>
+
+                <a href="#explore" class="nav-cta">Explore Nexa</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <p class="hero-label">
+                    BUILT FOR NIGERIANS. DESIGNED FOR AFRICA.
+                </p>
+
+                <h1 class="hero-title">
+                    Discover. Connect. Grow.
+                </h1>
+
+                <p class="hero-description">
+                    Find useful services, businesses, knowledge and opportunities in Nigeria. Nexa is a platform that helps you discover and connect with the right people and resources to grow your business or career.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#explore" class="button button-primary">Explore Nexa</a>
+
+                    <a href="#about" class="button button-secondary">Learn More</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="about reveal" id="about">
+
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">
+                        WHAT IS NEXA?
+                    </p>
+                    <h2>A simpler way to discover what's around you.</h2>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-text">
+                    <p>
+                        Nexa is a digital gateway designed to help people discover useful services, businesses, knowledge and opportunities.
+                    </p>
+                    <p>
+                        We're starting in Nigeria with a vision to connect communities across Africa.
+                    </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- EXPLORE -->
+
+        <section class="explore reveal" id="explore">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                EXPLORE NEXA
+            </p>
+
+            <h2>
+                Find something useful.
+            </h2>
+
+            <p>
+                Discover services, businesses, opportunities
+                and learning resources in one place.
+            </p>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="explore-search">
+
+            <label for="nexa-search">
+                Search Nexa
+            </label>
+
+            <input
+                type="search"
+                id="nexa-search"
+                placeholder="What are you looking for?"
+            >
+
+        </div>
+
+        <!-- LOCATION -->
+        
+        <div class="location-box">
+            <div class="location-content">
+                <span class="location-icon">
+                    📍
+                </span>
+
+                <div>
+                    <strong>
+                        Discover what's near you
+                    </strong>
+
+                    <p id="location-status">
+                        Use your location to discover
+                        relevant places and services.
+
+                    </p>
+                </div>
+
+            </div>
+
+            <button
+                class="location-button"
+                id="location-button"
+                type="button"
+                aria-describedby="location-status"
+            >
+                Use My Location
+            </button>
+
+        </div>
+
+        <div
+            class="nearby-status"
+            id="nearby-status"
+            aria-live="polite"
+        ></div>
+        <!-- Category Filters -->
+
+        <div class="category-filters">
+
+            <button
+                class="filter-button active"
+                type="button"
+                data-category="all"
+            >
+                All
+            </button>
+
+            <button
+                class="filter-button"
+                type="button"
+                data-category="services"
+            >
+                Services
+            </button>
+
+            <button
+                class="filter-button"
+                type="button"
+                data-category="businesses"
+            >
+                Businesses
+            </button>
+
+            <button
+                class="filter-button"
+                type="button"
+                data-category="opportunities"
+            >
+                Opportunities
+            </button>
+
+            <button
+                class="filter-button"
+                type="button"
+                data-category="learning"
+            >
+                Learning
+            </button>
+
+        </div>
+
+
+        <!-- Results -->
+
+        <div
+            class="explore-results"
+            id="explore-results"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================
+     SAVED ITEMS
+================================= -->
+
+<section
+    class="saved-section"
+    id="saved"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                YOUR SAVED ITEMS
+            </span>
+
+            <h2>
+                Keep useful things close.
+            </h2>
+
+            <p>
+                Save services, businesses, opportunities
+                and learning resources to come back to later.
+            </p>
+
+        </div>
+
+
+        <div
+            class="saved-results"
+            id="saved-results"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- HOW IT WORKS -->
+
+        <section class="how-it-works reveal" id="how-it-works">
+
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">
+                        HOW NEXA WORKS
+                    </p>
+
+                    <h2>
+                        simple by design.
+                    </h2>
+
+                </div>
+                <div class="steps">
+                    <article class="step">
+                        <span class="step-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Discover
+                        </h3>
+
+                        <p>
+                            Search for services, businesses, knowledge and opportunities.
+                        </p>
+
+                    </article>
+                    <article class="step">
+                        <span class="step-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Connect
+                        </h3>
+
+                        <p>
+                            Connect with the people, businesses or resources you need.
+                        </p>
+                    </article>
+                    <article class="step">
+                        <span class="step-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Grow
+                        </h3>
+
+                        <p>
+                            Learn, work, build and discover new possibilities.
+                        </p>
+
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- AFRICA -->
+
+        <section class="africa reveal" id="africa">
+            <div class="container">
+                <div class="africa-content">
+                    <div>
+                        <p class="section-label">
+                            BUILT FOR AFRICA
+                        </p>
+
+                        <h2>
+                            Starting in Nigeria.
+                            Designed with Africa in mind.
+                        </h2>
+
+                        <p>
+                            Nexa is being designed around the way people dicover services, businesses, knowledge and opportunities within their communities.
+                        </p>
+                    </div>
+
+                    <div class="africa-highlight">
+                        <span class="country-flag">
+                            🇳🇬
+                        </span>
+                        <strong>
+                            Nigeria
+                        </strong>
+                        <span>
+                            Our starting point
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Call To Action -->      
+         
+        <section class="cta reveal">
+
+            <div class="container">
+
+                <div class="cta-content">
+                    <p class="section-label">
+                        START EXPLORING
+                    </p>
+                    <h2>
+                        Your next connection could be closer than you think.
+                    </h2>
+
+                    <p>
+                        Discover useful services, businesses, knowledge and opportunities with Nexa.
+                    </p>
+
+                    <a href="#explore" class="button button-primary">
+                        Explore Nexa
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+   <footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="site-logo">
+                    Nexa
+                </a>
+
+                <p>
+                    Discover. Connect. Grow.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#explore">Explore</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                Starting in Nigeria. Designed with Africa in mind.
+            </p>
+
+            <p>
+                &copy; 2026 Nexa. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ================================
+     DETAILS MODAL
+================================= -->
+
+<div
+    class="details-modal"
+    id="details-modal"
+    aria-hidden="true"
+>
+
+    <div
+        class="details-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="details-title"
+    >
+
+        <button
+            class="modal-close"
+            id="modal-close"
+            type="button"
+            aria-label="Close details"
+        >
+            &times;
+        </button>
+
+
+        <div class="modal-icon" id="modal-icon">
+        </div>
+
+
+        <span
+            class="modal-category"
+            id="modal-category"
+        >
+        </span>
+
+
+        <h2 id="details-title">
+        </h2>
+
+
+        <p id="details-description">
+        </p>
+
+
+        <div class="modal-location" id="modal-location">
+        </div>
+
+
+        <button
+            class="modal-action"
+            id="modal-action"
+            type="button"
+        >
+            Explore More
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
